@@ -27,7 +27,7 @@ The energy function provides a theoretical understanding of why the network sett
 
 Why have we not applied the energy function? Because it is not strictly necessary for the network to operate. Our network stores patterns by modifying weights (Hebbian learning) and recalls patterns by iteratively updating neuron states based on the weighted sum of inputs. This update process implicitly follows the gradient of the energy landscape without our code needing to calculate the value of `E` at each step. The network "finds its way" to a minimum based on local rules.
 
-If our network successfully stores and recalls patterns, the absence of an explicit energy calculation function doesn't mean the core associative memory demonstration is flawed. The primary goal is often to show this recall behaviour. For these demonstration projects (HopfieldNetworkSRP and the upcoming HopfieldNetworkLCP), the absence of an explicit energy function calculation is not a significant drawback when the primary goal is to demonstrate fundamental recall capabilities.
+If our network successfully stores and recalls patterns, the absence of an explicit energy calculation function doesn't mean the core associative memory demonstration is flawed. The primary goal is often to show this recall behaviour. For these demonstration projects (HopfieldNetworkSPR and the upcoming HopfieldNetworkLCP), the absence of an explicit energy function calculation is not a significant drawback when the primary goal is to demonstrate fundamental recall capabilities.
 
 However, calculating the energy of different states (initial distorted patterns, intermediate states, final converged patterns, stored reference patterns) can provide valuable insights since
 + We can numerically verify that stored patterns are indeed low-energy states.
@@ -41,4 +41,4 @@ Visual Studio Community 2022 is the preferred platform for running this project,
  
 Visit https://visualstudio.microsoft.com/tr/downloads/?cid=learn-onpage-download-install-visual-studio-page-cta to install the community edition.
 After installing Visual Studio Community 2022, click on the solution file `HopfieldNetHebbian.sln` to open the development environment. 
-Select `> Build > Build HopfieldNetworkSRP`. After the build, you can typically locate the executable in a subdirectory like `C:\...\HopfieldNetworkSRP\x64\Debug`.
+Select `> Build > Build HopfieldNetworkSPR`. After the build, you can typically locate the executable in a subdirectory like `C:\...\HopfieldNetworkSPR\x64\Debug`.
